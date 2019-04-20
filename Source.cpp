@@ -2,17 +2,17 @@
 
 using namespace sf;
 
-void moveToPoint(Animal racer, Vector2f goalPoint, float time) {
+/*void moveToPoint(Animal racer, Vector2f goalPoint, float time) {
 	if (racer.sprite.getPosition().x < goalPoint.x) {
 		racer.currentFrame += 0.005*time;
 		if (racer.currentFrame > 13) { racer.currentFrame -= 13; }
 		racer.sprite.setTextureRect(IntRect(295 * (int)racer.currentFrame, 0, 295, 355));
 		racer.sprite.move(0.2*time, 0);
 	}
-}
+}*/
 
-int main(){
-	RenderWindow window(sf::VideoMode(1024, 768), "Game", Style::Default);
+int output(){
+	//RenderWindow window(sf::VideoMode(1024, 768), "Game", Style::Default);
 
 	Texture hareTxtr;
 	hareTxtr.loadFromFile("images/hareSL.png");
@@ -30,7 +30,7 @@ int main(){
 	Clock clock;
 	float currentFrame = 0;
 
-	while (window.isOpen()){
+	/*while (window.isOpen()){
 		float time = clock.getElapsedTime().asMicroseconds();
 		clock.restart();
 		time = time / 800;
@@ -48,6 +48,6 @@ int main(){
 		window.clear();
 		window.draw(hareSprt);
 		window.display();
-	}
+	}*/
 	return 0;
 }
